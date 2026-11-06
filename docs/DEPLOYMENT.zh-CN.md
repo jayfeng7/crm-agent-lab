@@ -15,7 +15,7 @@ corepack pnpm install --frozen-lockfile
 cp .env.hostgator.example .env
 ```
 
-1. 参考 [环境变量说明](SETUP.md)，配置 Supabase URL、公开 anon key、服务端 service role key、数据库连接串、域名和随机生成的服务端密钥。结合 [应用模板](../.env.example)核对实际启用的集成，并将 `SIGNUP_MODE` 设为 `invite_only`。
+1. 参考 [环境变量说明](SETUP.md)，配置 Supabase URL、公开 anon key、服务端 service role key、数据库连接串、域名和随机生成的服务端密钥。结合 [应用模板](../.env.example)核对实际启用的集成，并设定 `SIGNUP_MODE=so_convite`，启用邀请注册模式。
 2. 将 Supabase Auth 的 Site URL 和回调允许列表配置为部署地址。使用 `corepack pnpm db:migrate` 初始化空库，先确保连接指向独立的新库。已有数据库按照 [升级文档](ATUALIZANDO.md)走备份和迁移流程。
 3. 按 [管理员初始化脚本](../scripts/bootstrap-owner.ts)的说明，用环境变量传入独立的管理员邮箱、密码和组织名称。从可信主机执行，完成后清理用于引导的密码变量。
 4. 将域名 DNS 指向服务器，按生产模板配置 HTTPS、Redis 和 WAHA。使用生产 Compose 与本地构建覆盖文件，从同一份源码构建 Web、Worker 和 Scheduler。

@@ -108,6 +108,8 @@ CRM 产品层通过自有接口调用运行内核；Pi 类型封装在适配层�
 
 准备 Node.js 22+、pnpm，以及开发用 Supabase 和 Redis 配置。
 
+项目固定使用 pnpm 9.15.9。若未安装 pnpm，可用 `corepack pnpm` 代替下方的 `pnpm` 命令。
+
 ```bash
 git clone https://github.com/jayfeng7/crm-agent-lab.git
 cd crm-agent-lab
@@ -203,5 +205,7 @@ node scripts/serve-agent-demo.mjs
 ## 许可与来源
 
 本仓库从 Pi Native CRM 的源码快照整理发布，保留 Rafael Melgaço 的原始版权声明和 [MIT 许可证](LICENSE)。历史文档中的 `helsome/AiNativeCrm` 及提交号指向原项目。
+
+发布包保留脱敏回放和文字报告。历史运行截图、日志等原始材料留在本地归档。
 
 贡献前请阅读 [贡献指南](CONTRIBUTING.md)、[行为准则](CODE_OF_CONDUCT.md)和 [安全报告流程](SECURITY.md)。
