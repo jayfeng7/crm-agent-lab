@@ -8,6 +8,8 @@
 
 在线演示无需登录或 API 密钥。可以查看合成客户、体验 Agent 工作台和审批流程，或回放脱敏的历史模型运行。演示中的交互在浏览器执行。完整 CRM 的登录、数据持久化和实时模型运行需要自托管。
 
+如果当前网络无法访问 `github.io`，可 [下载离线演示 ZIP](https://github.com/jayfeng7/crm-agent-lab/releases/download/demo-offline-1/pi-native-crm-demo.zip)。解压全部文件后，用浏览器打开 `index.html`，无需安装依赖。
+
 ## 我们的产品
 
 Pi Native CRM 是一个可自托管的 Agent 工作台。联系人、会话、商机、跟进任务和知识库构成 Agent 的工作环境；自然语言目标成为执行入口。

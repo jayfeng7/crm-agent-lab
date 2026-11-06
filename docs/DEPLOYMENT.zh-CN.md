@@ -4,6 +4,8 @@
 
 [GitHub Pages 演示](https://jayfeng7.github.io/crm-agent-lab/)提供免登录的浏览器体验。`Publish interactive demo` 工作流先运行演示测试，再发布 `examples/chat-first-demo/dist`。派生仓库可以在 Settings → Pages 中选择 GitHub Actions 作为发布来源。
 
+如果网络无法访问 `github.io`，可 [下载离线演示](https://github.com/jayfeng7/crm-agent-lab/releases/tag/demo-offline-1)，解压后打开 `index.html`。
+
 ## 自托管完整 CRM
 
 准备一台 Linux 主机、Docker Engine 与 Compose、指向主机的域名，以及独立的 Supabase 项目。Supabase 提供 Postgres、Auth、Storage 和 Realtime。
